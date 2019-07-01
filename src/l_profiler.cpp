@@ -23,7 +23,7 @@ static int lrecord_save(lua_State *L) {
 }
 
 extern "C"
-int luaopen_profiler(lua_State *L) {
+int luaopen_profiler_c(lua_State *L) {
 	luaL_checkversion(L);
 	luaL_Reg l[] = {
 		{"start", lstart},
